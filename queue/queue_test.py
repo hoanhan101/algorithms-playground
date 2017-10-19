@@ -1,3 +1,11 @@
+#!/usr/bin/env python3
+
+"""
+	queue_test.py - Queue UnitTest
+	Author: Hoanh An (hoanhan@bennington.edu)
+	Date: 10/18/2017
+"""
+
 from queue import *
 
 import unittest

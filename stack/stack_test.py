@@ -1,3 +1,11 @@
+#!/usr/bin/env python3
+
+"""
+	stack_test.py - Stack UnitTest
+	Author: Hoanh An (hoanhan@bennington.edu)
+	Date: 10/18/2017
+"""
+
 from stack import *
 
 import unittest

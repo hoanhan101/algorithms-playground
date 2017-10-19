@@ -1,3 +1,11 @@
+#!/usr/bin/env python3
+
+"""
+	linked_list_test.py - Linked Listed UnitTest
+	Author: Hoanh An (hoanhan@bennington.edu)
+	Date: 10/18/2017
+"""
+
 from linked_list import *
 
 import unittest

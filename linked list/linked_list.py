@@ -1,3 +1,11 @@
+#!/usr/bin/env python3
+
+"""
+	linked_list.py - Linked List Implementation
+	Author: Hoanh An (hoanhan@bennington.edu)
+	Date: 10/18/2017
+"""
+
 class Node(object):
 
     def __init__(self, data, next=None):
