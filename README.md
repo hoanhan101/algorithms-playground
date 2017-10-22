@@ -16,7 +16,8 @@ For example: *swift_linked list* means that it’s linked list implemented in Sw
  
 **For Python file:**
 - Use Pycharm or any IDE to open project's folder file. 
-- Compile and run.
+- There will be 1 implementation file and 1 test file.
+- Run the test file to check if all the test passes.
 
 **For Processing file:**
 - Open with Processing!
