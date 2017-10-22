@@ -6,7 +6,7 @@
 language_algorithm/data structure
 ```
 
-For example: “swift_linked list” means that it’s linked list implemented in Swift.
+For example: *swift_linked list* means that it’s linked list implemented in Swift.
 
 # How to open/test files
 
