@@ -28,3 +28,27 @@ Returns adviser's important alerts.
         'response': 'NO IMPORTANT ALERTS' 
       }
       ```
+
+### Upcoming Events
+Returns upcoming events and deadline
+* **URL:** `/upcoming_events`
+* **Method:** `GET`
+* **Params:** None
+* **Return:**
+    * **Code:** 200
+    * **Example:** 
+      ```
+      { 
+        'id': 1, 
+        'date': '10/03/2017'
+        'text': 'Faculty meeting'
+      }
+      ```
+* **Error:**
+    * **Code:** 404 NOT FOUND
+    * **Example:**
+      ```
+      { 
+        'response': 'NO UPCOMING EVENTS/DEADLINE' 
+      }
+      ```
