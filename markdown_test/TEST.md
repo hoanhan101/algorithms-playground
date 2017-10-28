@@ -1,24 +1,16 @@
 **Show User**
-----
+---
   Returns json data about a single user.
 
-* **URL**
+* **URL:** /users/:id
 
-  /users/:id
+* **Method:** `GET`
 
-* **Method:**
+* **URL Params**
 
-  `GET`
-  
-*  **URL Params**
+   **Required:** `id=[integer]`
 
-   **Required:**
- 
-   `id=[integer]`
-
-* **Data Params**
-
-  None
+* **Data Params** None
 
 * **Success Response:**
 
@@ -29,11 +21,6 @@
 
   * **Code:** 404 NOT FOUND <br />
     **Content:** `{ error : "User doesn't exist" }`
-
-  OR
-
-  * **Code:** 401 UNAUTHORIZED <br />
-    **Content:** `{ error : "You are unauthorized to make this request." }`
 
 * **Sample Call:**
 
