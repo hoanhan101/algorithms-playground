@@ -3,19 +3,20 @@
 ## Sketch REST API
 Returned data are in JSON format.
 
-### Show User
-Returns json data about a single user.
-* **URL:** /users/:id
+### Important Alerts
+Returns advisor's important alerts.
+* **URL:** `id/important_alerts`
 * **Method:** `GET`
-* **URL Params**
-   **Required:** `id=[integer]`
-* **Data Params** None
+* **Params:**
+    * **Required:** `id=[integer]`
 * **Success Response:**
-  * **Code:** 200 <br />
-    **Content:** `{ id : 12, name : "Michael Bloom" }`
+    * **Code:** 200 
+        <br/>
+      **Content:** `{ id : 12, name : "Michael Bloom" }`
 * **Error Response:**
-  * **Code:** 404 NOT FOUND <br />
-    **Content:** `{ error : "User doesn't exist" }`
+    * **Code:** 404 NOT FOUND
+        <br/>
+      **Content:** `{ error : "User doesn't exist" }`
 * **Sample Call:**
   ```javascript
     $.ajax({
