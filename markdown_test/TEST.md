@@ -14,10 +14,10 @@ Returns adviser's important alerts.
     * **Example:** 
       ```
       { 
-        id : 1, 
-        category : "FWT"
-        title: "FWT approval required"
-        advisses: [advisee_id: 1234, advisee_id: 5678] 
+        'id': 1, 
+        'category': 'FWT'
+        'title': 'FWT approval required'
+        'advisses': ['advisee_id': 1234, 'advisee_id': 5678] 
       }
       ```
 * **Error:**
@@ -25,6 +25,6 @@ Returns adviser's important alerts.
     * **Example:**
       ```
       { 
-        response: "NO IMPORTANT ALERTS" 
+        'response': 'NO IMPORTANT ALERTS' 
       }
       ```
