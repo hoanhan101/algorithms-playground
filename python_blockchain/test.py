@@ -1,3 +1,11 @@
+#!/usr/bin/env python3
+
+"""
+	test.py - Blockchain Unittest
+	Author: Hoanh An (hoanhan@bennington.edu)
+	Date: 11/24/2017
+"""
+
 import unittest
 from block import *
 from blockchain import *

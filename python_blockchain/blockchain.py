@@ -1,3 +1,11 @@
+#!/usr/bin/env python3
+
+"""
+	blockchain.py - Blockchain Class
+	Author: Hoanh An (hoanhan@bennington.edu)
+	Date: 11/24/2017
+"""
+
 import time
 from block import Block
 from datetime import datetime

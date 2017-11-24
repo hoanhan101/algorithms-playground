@@ -1,3 +1,11 @@
+#!/usr/bin/env python3
+
+"""
+	block.py - Block Class
+	Author: Hoanh An (hoanhan@bennington.edu)
+	Date: 11/24/2017
+"""
+
 import hashlib
 
 class Block():
