@@ -35,6 +35,5 @@ def main():
     test_queue.test_dequeue_one_element()
     test_queue.test_dequeue_more_than_one_element()
 
-
 if __name__ == '__main__':
     main()
