@@ -33,14 +33,6 @@ def get_blockchain():
 # Add a transaction to the block.
 @app.route('/transactions/new', methods=['POST'])
 def add_transaction():
-    """
-    Data package example:
-        {
-         "sender": "d4ee26eee15148ee92c6cd394edd974e",
-         "recipient": "someone-other-address",
-         "amount": 5
-        }
-    """
     # Get request data
     values = request.get_json()
 
