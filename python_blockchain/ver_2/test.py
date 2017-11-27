@@ -60,7 +60,6 @@ class TestTwoPeers(unittest.TestCase):
         peer_1_mine_2 = requests.get('http://0.0.0.0:5000/mine')
         peer_1_mine_3 = requests.get('http://0.0.0.0:5000/mine')
 
-        message = 'Our chain was is_replaced'
         peer_2_resolve = requests.get('http://0.0.0.0:5001/nodes/resolve')
         self.assertEqual(201, peer_2_resolve.status_code)
 
