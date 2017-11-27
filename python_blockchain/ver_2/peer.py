@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """
-	networking.py - Blockchain P2P Networking
+	peer.py - Blockchain P2P Networking
 	Based on Daniel van Flymen's blockchain repo at: https://github.com/dvf/blockchain
 	Author: Hoanh An (hoanhan@bennington.edu)
 	Date: 11/26/2017
