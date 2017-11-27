@@ -62,7 +62,6 @@ class Blockchain(object):
         :param amount: Amount of coin
         :return: Index of the next mined block
         """
-
         self.transactions.append({
             'sender': sender,
             'recipient': recipient,
@@ -77,7 +76,6 @@ class Blockchain(object):
         :param last_proof: Last proof number
         :return: Proof number
         """
-
         # Let proof number start at 0
         proof = 0
 
@@ -93,7 +91,6 @@ class Blockchain(object):
         :param address: Address of node
         :return: None
         """
-
         parsed_url = urlparse(address)
         self.nodes.add(parsed_url.netloc)
 
@@ -104,7 +101,6 @@ class Blockchain(object):
         :param chain: A blockchain
         :return: True if valid, False if not
         """
-
         # Set the first block to last block variable
         last_block = chain[0]
 
@@ -170,7 +166,6 @@ class Blockchain(object):
         :param proof: Current proof
         :return: True if correct, False if not.
         """
-
         guess = '{0}{1}'.format(last_proof, proof).encode()
         guess_hash = hashlib.sha256(guess).hexdigest()
         return guess_hash[:4] == '0000'
@@ -182,7 +177,6 @@ class Blockchain(object):
         :param block: Block
         :return: Hash string
         """
-
         # Make sure data is sorted, otherwise would have inconsistent hashes
         block_string = json.dumps(block, sort_keys=True).encode()
         return hashlib.sha256(block_string).hexdigest()
