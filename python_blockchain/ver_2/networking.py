@@ -32,7 +32,7 @@ def get_blockchain():
 
 # Add a transaction to the block.
 @app.route('/transactions/new', methods=['POST'])
-def add_new_transaction():
+def add_transaction():
     """
     Data package example:
         {
@@ -114,12 +114,13 @@ def resolve_conflict():
             'message': 'Our chain was is_replaced',
             'new_chain': blockchain.chain
         }
+        return jsonify(response), 201
     else:
         response = {
             'message': 'Our chain is authoritative',
             'chain': blockchain.chain
         }
-    return jsonify(response), 200
+        return jsonify(response), 200
 
 if __name__ == '__main__':
     parser = ArgumentParser()
