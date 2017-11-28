@@ -9,7 +9,7 @@
 
 from blockchain import Blockchain
 from uuid import uuid4
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, render_template
 from argparse import ArgumentParser
 
 # Instantiate our Node
@@ -20,6 +20,23 @@ node_ID = str(uuid4())
 
 # Instantiate the Blockchain
 blockchain = Blockchain()
+
+
+"""
+    VIEW
+"""
+
+@app.route('/views/chain', methods=['GET'])
+def view_blockchain():
+    response = {
+        'chain': blockchain.chain,
+        'length': len(blockchain.chain),
+    }
+    return render_template('chain.html', data=response)
+
+"""
+    MODEL
+"""
 
 # Return the blockchain and its length.
 @app.route('/chain', methods=['GET'])
