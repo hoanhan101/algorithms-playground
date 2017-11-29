@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """
-	test.py - Blockchain Unittest
+	test_peer.py - Blockchain Unittest
 	Author: Hoanh An (hoanhan@bennington.edu)
 	Date: 11/24/2017
 """
