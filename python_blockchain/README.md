@@ -1,1 +1,0 @@
-### Moved to [blockchain_db](https://github.com/hoanhan101/blockchain_db)
