@@ -1,7 +1,7 @@
 # Algorithms' Playground
 This repo contains all of my implementations of different algorithms/data structure.
 
-### File
+## File
 
 ### Folder's naming format
 ```
