@@ -41,13 +41,28 @@ def generate_raw():
     Return raw data.
     """
     response = {
-        'header': 'The Beatles - Lucy In The Sky With Diamonds',
+        'song': 'The Beatles - Lucy In The Sky With Diamonds',
         'noun': nouns[random.randint(0, len(nouns) - 1)],
         'food_1': foods_1[random.randint(0, len(foods_1) - 1)],
         'food_2': foods_2[random.randint(0, len(foods_2) - 1)],
         'verb': verbs[random.randint(0, len(verbs) - 1)],
         'adverb': adverbs[random.randint(0, len(adverbs) - 1)],
         'adjective': adjectives[random.randint(0, len(adjectives) - 1)],
+    }
+    return jsonify(response) 
+
+@app.route('/raw/full', methods=['GET'])
+def generate_raw_full():
+    """
+    Return all raw data.
+    """
+    response = {
+        'song': 'The Beatles - Lucy In The Sky With Diamonds',
+        'nouns': nouns,
+        'foods': foods_1 + foods_2,
+        'verbs': verbs,
+        'adverbs': adverbs,
+        'adjectives': adjectives
     }
     return jsonify(response) 
 
