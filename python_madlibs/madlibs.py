@@ -22,7 +22,7 @@ adjectives = ['secret', 'savoy', 'free', 'apathetic', 'parliamentary',
 @app.route('/', methods=['GET'])
 def generate():
     """
-    Generate texts.
+    Landing page.
     """
     response = {
         'header': 'The Beatles - Lucy In The Sky With Diamonds',
@@ -35,6 +35,21 @@ def generate():
     }
     return render_template('landing.html', data=response)
 
+@app.route('/raw', methods=['GET'])
+def generate_raw():
+    """
+    Return raw data.
+    """
+    response = {
+        'header': 'The Beatles - Lucy In The Sky With Diamonds',
+        'noun': nouns[random.randint(0, len(nouns) - 1)],
+        'food_1': foods_1[random.randint(0, len(foods_1) - 1)],
+        'food_2': foods_2[random.randint(0, len(foods_2) - 1)],
+        'verb': verbs[random.randint(0, len(verbs) - 1)],
+        'adverb': adverbs[random.randint(0, len(adverbs) - 1)],
+        'adjective': adjectives[random.randint(0, len(adjectives) - 1)],
+    }
+    return jsonify(response) 
 
 
 if __name__ == '__main__':
